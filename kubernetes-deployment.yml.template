@@ -5,9 +5,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: rest-sputnik
+  name: rest-sputnik09
   labels:
-    run: rest-sputnik
+    run: rest-sputnik09
 spec:
   replicas: 1
   strategy:
@@ -39,6 +39,6 @@ spec:
   selector:
     run: rest-sputnik
   ports:
-    - port: 8088
+    - port: 8009
       targetPort: 3000
   type: ClusterIP
